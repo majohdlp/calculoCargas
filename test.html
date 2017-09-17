@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>calculos</title>
+  </head>
+  <body>
+    <script>
+        /*
+        3.1.1.1 Ganancia de Calor por Techo. La transferencia de calor sensible en techos
+        se calcula por medio de la siguiente ecuación:
+            Q TECHO = U T ∗ A ∗ [(CLTD TECHO + LM) ∗ K + IO. Corr]
+            Donde:
+
+            Q_TECHO = Calor sensible ganado por techo (Btu/h)
+            U = Coeficiente global de transferencia de calor (Btu/h ∗ ft 2 ∗ °F).
+            A = Área total del techo (ft 2 )
+            CLTD TECHO = Carga de enfriamiento de diferencial de temperatura corregida.
+            LM = Corrección mensual de latitud en techos.
+            K = Factor de corrección en función al color del techo.
+            IO. Corr = Corrección de temperatura interior y exterior (°F).
+        */
+       function calculoTransferenciaCalorTecho(a, b) {
+         const factorUT = 3.14;
+         return Math.pow(a,2) * factorUT;
+       }
+    </script>
+  </body>
+</html>
